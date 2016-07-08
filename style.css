@@ -1683,7 +1683,7 @@ img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 	}
 }
 
-.menu-main-menu-container {
+.menu-main-menu-container, .menu-menu-1-container {
 	position: relative;
 	top: 0;
 	left: 0;
