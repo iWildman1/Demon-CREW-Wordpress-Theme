@@ -284,9 +284,7 @@ object {
 /* MAIN SITE STYLES */
 
 /* ========== TYPOGRAPHY ==========*/
-/* ========== TYPOGRAPHY ==========*/
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
-@import url("https://fonts.googleapis.com/css?family=Crete+Round");
+
 @keyframes chevronAnim {
   from {
     opacity: 0;
@@ -1598,8 +1596,7 @@ a.btn-primary:focus, a.btn-primary:focus:focus {
 	margin-top: 32px;
 }
 
-
-@media screen and (max-width: 782px) {
+@media only screen and (max-width: 782px) and (min-width: 601px){
 	.logged-in .left-navigation {
 		margin-top: 46px;
 	}
@@ -1608,16 +1605,6 @@ a.btn-primary:focus, a.btn-primary:focus:focus {
 		margin-top:46px;
 	}
 
-}
-
-@media screen and (max-width: 600px) {
-	#wpadminbar.nojq {
-		display: none;
-	}
-
-	.logged-in .left-navigation, .logged-in .mobile-bar, {
-		margin-top: 0;
-	}
 }
 
 .event-grid .col-sm-6{
@@ -1635,4 +1622,81 @@ a.btn-primary:focus, a.btn-primary:focus:focus {
 img.attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 	width: 100%;
 	height: auto;
+}
+
+.share-icons i {
+	color: #333;
+}
+
+.author-info {
+	position: relative;
+	min-height: 120px;
+}
+
+.main-post .author-container img{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	transform: translateX(-50%);
+	width: 90px;
+	height: 90px;
+	background-color: white;
+	border-radius: 100%;
+	padding: 5px;
+	border: 1px solid #d0d0d0;
+}
+
+.author-description {
+	padding: 0 50px;
+}
+
+.main-post .author-container p {
+	line-height: 1.7;
+	letter-spacing: 0.3px;
+}
+
+.single-event-box table p {
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.single-event-box table .td-lead {
+	font-weight: 500;
+}
+
+.single-event-box table .td-lead i {
+	padding-right: 5px;
+}
+
+.event-words {
+	font-size: 16px;
+	line-height: 1.7;
+	letter-spacing: 0.3px;
+}
+
+@media screen and (max-width: 992px) {
+	.event-words {
+		display: block !important;
+		margin-top: 20px !important;
+	}
+}
+
+.menu-main-menu-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	#wpadminbar.nojq {
+		display: none;
+	}
+
+	.logged-in .mobile-bar, .logged-in .list-header {
+		margin-top: 0px !important;
+	}
 }

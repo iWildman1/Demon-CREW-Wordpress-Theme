@@ -18,8 +18,8 @@ get_header(); ?>
 		<div class="list-header">
 			<div class="container">
 				<div class="row clearfix">
-					<h3 class="pull-left">Our Blogs</h3>
-					<small class="pull-right">Home / Blog / <?php the_title(); ?></small>
+					<h3 class="pull-left">Our Work</h3>
+					<small class="pull-right">Home / Work / <?php the_title(); ?></small>
 				</div>
 			</div>
 		</div>
@@ -30,7 +30,6 @@ get_header(); ?>
 					<ul class="post-info-list">
 						<li><i class="fa fa-calendar" aria-hidden="true"></i><?php $date = get_the_date(); $date = new DateTime($date); echo $date->format('jS F Y') ?></li>
 						<li><i class="fa fa-user" aria-hidden="true"></i><?php the_author(); ?></li>
-						<li><i class="fa fa-tag" aria-hidden="true"></i><?php $categories = get_the_category(); echo $categories[0]->name; ?></li>
 						<li><i class="fa fa-comment" aria-hidden="true"></i><?php comments_number(); ?></li>
 					</ul>
 					<?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
